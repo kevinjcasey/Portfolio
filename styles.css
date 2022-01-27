@@ -3,14 +3,24 @@ a {
    text-decoration: none;
 }
 
-img {
-   width: 30%;
+body {
+   padding: 1rem;
 }
+
+/* img {
+   width: 50%;
+} */
 
 .main-container {
    display: flex;
+   flex-direction: row;
    background-image: url(images/Boston-skyline-2.jpeg);
-   background-size: cover;
+   background-size: contain;
    background-repeat: no-repeat;
 }
 
+.headshot-img1 img {
+   border: 3px solid salmon;
+   max-width: 400px;
+   max-height: 98%;
+}
