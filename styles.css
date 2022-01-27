@@ -1,5 +1,6 @@
-h1 {
-   color: blue;
+/* removes underline  */
+a {
+   text-decoration: none;
 }
 
 img {
@@ -12,3 +13,4 @@ img {
    background-size: cover;
    background-repeat: no-repeat;
 }
+
