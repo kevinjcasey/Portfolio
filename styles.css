@@ -1,3 +1,14 @@
 h1 {
    color: blue;
 }
+
+img {
+   width: 30%;
+}
+
+.main-container {
+   display: flex;
+   background-image: url(images/Boston-skyline-2.jpeg);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
