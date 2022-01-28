@@ -16,7 +16,7 @@
     <!-- Header and Nav Section -->
 
     <header>
-        <nav>
+        <nav class="header">
             <!-- Should I have done this using jQuery? -->
             <a href="index.html">Home</a>
             <a href="about-me.html">About Me</a>
@@ -28,40 +28,57 @@
 
     <!-- Main Section -->
 
-    <section class="about-container"></section>
+    <section class="about-container">
 <!-- it would be great but ambitious to have both the work and fun sections as cards that when click, flip to reveal the text - can he do it?  -->
         <!-- heading -->
-        <h3>Hi, I'm Kevin, nice to meet you!</h3> <!-- maybe make this an h4 or h5 -->
-        <!-- alternative: --> <h3>(alternative:) We need to talk about Kevin</h3> 
+        <!-- <h3>Hi, I'm Kevin, nice to meet you!</h3> -->
+        <!-- alternative: --> 
+        <h3>We need to talk about Kevin</h3> 
 
         <!-- work stuff -->
-        <img src="images/headshot 2.jpg">
         <section class="work-stuff">
-            <h5>Work stuff</h5>
-            <p>An aspiring Boston-based web developer, I'm currently enrolled in a Software Engineering Immersive program with General Assembly. Before that, I had a long career as a bartender at upscale luxury hotel. (add more about background etc. - doesn't matter right now) </p>
+            <div class="about-card">
+                <h5>Work stuff</h5>
+                <p>An aspiring Boston-based web developer, I'm currently enrolled in a Software Engineering Immersive program with General Assembly. Before that, I had a long career as a bartender at upscale luxury hotel. (add more about background etc. - doesn't matter right now) </p>
+            </div>   
+            <img src="images/headshot 2.jpg" class="headshot-img-2">
         </section>
 
-        <!-- add a skills section this? -->
+        <!-- add a skills section here? -->
         
         <!-- fun stuff  -->
-        <img src="images/Kevin fun pic.JPEG">
         <section class="fun-stuff">
-            <h5>Fun stuff</h5>
-            <p>Born and raised in rural, upstate New York. I've lived in the Boston area for almost ten years. In my free time, I enjoy blah blah blah movies, reading (stephen king), biking, video games, fantasy football </p>
+            <img src="images/Kevin fun pic.JPEG" class="fun-Kevin-img">
+            <div class="about-card">
+                <h5>Fun stuff</h5>
+                <p>Born and raised in rural, upstate New York. I've lived in the Boston area for almost ten years. In my free time, I enjoy blah blah blah movies, reading (stephen king), biking, video games, fantasy football </p>
+            </div>
         </section>
-
+    </section>
     <!-- Footer Section -->
 
     <footer>   
-        <nav>
+        <nav class="footer">
             <!-- replace text with icons  -->
-            <a href="https://github.com/kevinjcasey" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/kevin-j-casey/" target="_blank">LinkedIn</a>
-            <a href="https://www.instagram.com/kevinjcasey10/" target="_blank">Instagram</a>
-            <a href="https://www.codecademy.com/profiles/kevinjcasey" target="_blank">Codecadmey</a>
+            <a href="https://github.com/kevinjcasey" target="_blank">
+                <ion-icon name="logo-github" size="large"></ion-icon>
+            </a>
+            <a href="https://www.linkedin.com/in/kevin-j-casey/" target="_blank">
+                <ion-icon name="logo-linkedin" size="large"></ion-icon>
+            </a>
+            <a href="https://www.instagram.com/kevinjcasey10/" target="_blank">
+                <ion-icon name="logo-instagram" size="large"></ion-icon>
+            </a>
+            <!-- this is not working -->
+            <a href="https://ga-students.slack.com/team/U02RV3B1PMH" target="_blank">
+                <ion-icon name="logo-slack" size="large"></ion-icon>
+            </a>
         </nav>
         <small>&copy; Copyright 2022, Kevin Casey</small>
     </footer>
-</body>
+
+    <!-- for social icons in footer -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
