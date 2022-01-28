@@ -11,16 +11,24 @@ body {
    width: 50%;
 } */
 
-.main-container {
+.background-img {
    display: flex;
    flex-direction: row;
    background-image: url(images/Boston-skyline-2.jpeg);
-   background-size: contain;
+   background-size: cover;
    background-repeat: no-repeat;
+   width: 100%;
+}
+
+.main-container {
+   display: flex;
 }
 
 .headshot-img1 img {
-   border: 3px solid salmon;
+   border-width: 3px; 
+   border-style: solid;
+   border-color:  rgba(34, 145, 93, 0.879);
+   border-radius: 20px;
    max-width: 400px;
-   max-height: 98%;
+   max-height: 90%;
 }
