@@ -61,7 +61,7 @@
    }
 
    .nav-links {
-      /* display: none; */
+      display: none;
       width: 100%;
    }
 
@@ -73,18 +73,20 @@
    .nav-links ul {
       width: 100%;
       flex-direction: column;
+      align-items: flex-end;
    }
 
    .nav-links li {
-      width: 100%;
+      width: 25%;
       text-align: right;
    }
 
    .nav-links li a {
       padding-top: 5px;
-      padding-right: 20px;
+      padding-right: 40px;
       padding-bottom: 10px;
    }
+
 }
 
 
