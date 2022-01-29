@@ -77,7 +77,8 @@
    }
 
    .nav-links li {
-      width: 25%;
+      /* to stop the "about me" from dropping to two lines */
+      width: 35%;
       text-align: right;
    }
 
