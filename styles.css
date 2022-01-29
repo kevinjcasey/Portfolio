@@ -26,7 +26,7 @@
    text-decoration: none;
    color: black;
    padding: 1rem;
-   display: block; /* so it takes up the whole width */
+   display: block; /* allows setting of width and height */
 }
 
 /* need another color for this plus the static text */
@@ -57,7 +57,7 @@
 }
 
 /* change to 400-500 range; just placeholder on larger screen */
-@media (max-width: 800px) {
+@media (max-width: 500px) {
    .hamburger-button {
       display: flex;
    }
@@ -90,7 +90,6 @@
       padding-bottom: 10px;
    }
 }
-
 
 /* =========== Misc.=============== */
 

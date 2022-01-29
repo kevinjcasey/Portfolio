@@ -12,7 +12,7 @@ const $hamburgerButton = $('.hamburger-button')
 const $navLinks = $('.nav-links')
 
 $hamburgerButton.on('click', () => {
-    $('.nav-links').toggle(600).appendTo('.header')
+    $navLinks.toggle(600).appendTo('.header')
 })
 
 
