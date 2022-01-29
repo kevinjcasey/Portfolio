@@ -3,7 +3,7 @@
 .header {
    display: flex;
    justify-content: space-between;
-   background-color: darkgrey;
+   background-color: rgba(34, 145, 93, 0.879);
    align-items: center;
 }
 
@@ -24,15 +24,14 @@
 
 .nav-links li a {
    text-decoration: none;
-   color: black;
+   color: lightgrey;
    padding: 1rem;
    display: block; /* so it takes up the whole width */
 }
 
 /* need another color for this plus the static text */
-.nav-links li a:hover {
-  background-color: #2e2e2e;
-  color: white;
+.nav-links li:hover {
+  background-color: grey;
 }
 
 /* ---- Menu button ----- */
@@ -52,7 +51,7 @@
 .hamburger-button .menu-bar {
    height: 3px;
    width: 100%;
-   background-color: black;
+   background-color: lightgrey;
    border-radius: 10px;
 }
 
@@ -129,6 +128,9 @@ body {
 }
 
 .headshot-img img {
+   /* border-width: 3px; 
+   border-style: double;
+   border-color:  rgba(34, 145, 93, 0.879); */
    border-radius: 30px;
    max-width: 350px;
    max-height: 95%;
@@ -141,7 +143,7 @@ body {
    display: flex;
    flex-flow: column nowrap;
    justify-content: center;
-   background-image: linear-gradient(to bottom right, #66b98f, #07889B);
+   background-color: linear-gradient(to bottom right, lightgrey, darkgrey);
 }
 
 .about-container h2 {
@@ -173,8 +175,7 @@ body {
    padding: 10px;
    margin: 0 auto;
    font-size: 20px;
-   background-color: #eeaa7b;
-   color: #f8eee7;
+   background-color: lightpink;
 }
 
 .fun-card {
@@ -188,8 +189,7 @@ body {
    padding: 10px;
    margin: 0 auto;
    font-size: 20px;
-   background-color: #e37222;
-   color: #f8eee7;
+   background-color: lightyellow;
 }
 
 /* NOTES: 
@@ -228,17 +228,15 @@ body {
    color: lightgrey;
    transition: color 0.3s;
    display: block;
-   /* makes icons grow on hover - used with transform (below) */
-   transition: transform .2s;
 }
 
 .footer a:hover {
    color: white;
-   transform: scale(1.8);
 }
 
 nav.footer {
    display: flex;
    justify-content: flex-start;
-   background-color: darkgrey;
+   background-color: rgba(34, 145, 93, 0.879);
+   /* padding: 5px; */
 }

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://127.0.0.1:5500/about-me.html# -->
+<html lang="en" class="hydrated"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style data-styles="">ion-icon{visibility:hidden}.hydrated{visibility:inherit}</style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="./Kevin Casey Portfolio_files/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="./Kevin Casey Portfolio_files/app.js"></script>
+    <title>Kevin Casey Portfolio</title>
+<link rel="stylesheet" href="./Kevin Casey Portfolio_files/styles.css"></head>
+<body>
+    <!-- Header and Nav Section -->
+
+    <header>
+        <nav class="header">
+            <!-- only way I could get the nav bar to stay in place on smaller screen size -->
+            <div class="title">KC</div>
+            <a href="http://127.0.0.1:5500/about-me.html#" class="hamburger-button">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+                    <li><a href="http://127.0.0.1:5500/about-me.html">About</a></li>
+                    <li><a href="http://127.0.0.1:5500/projects.html">Projects</a></li>
+                    <li><a href="http://127.0.0.1:5500/resume.html">Resume</a></li>
+                    <li><a href="http://127.0.0.1:5500/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+
+    <section class="about-container">
+<!-- it would be great but ambitious to have both the work and fun sections as cards that when click, flip to reveal the text - can he do it?  -->
+        <!-- heading -->
+        <!-- <h3>Hi, I'm Kevin, nice to meet you!</h3> -->
+        <!-- alternative: --> 
+        <h2>We need to talk about Kevin</h2> 
+
+        <!-- work stuff -->
+        <section class="work-stuff">
+            <div class="work-card">
+                <div class="front">
+                    <h4>Work stuff</h4> 
+                </div>
+                <div class="back">
+                    <p>An aspiring Boston-based web developer, I'm currently enrolled in a Software Engineering Immersive program with General Assembly. Before that, I had a long career as a bartender at upscale luxury hotel. (add more about background etc. - doesn't matter right now) </p>
+                </div>
+            </div>   
+            <img src="./Kevin Casey Portfolio_files/headshot 2.jpg" class="headshot-img-2">
+        </section>
+
+        <!-- add a skills section here? -->
+        
+        <!-- fun stuff  -->
+        <section class="fun-stuff">
+            <img src="./Kevin Casey Portfolio_files/Kevin fun pic.JPEG" class="fun-Kevin-img">
+            <div class="fun-card">
+                <div class="front">
+                    <h4>Fun stuff</h4>    
+                </div>
+                <div class="back">
+                    <p>Born and raised in rural, upstate New York. I've lived in the Boston area for almost ten years. In my free time, I enjoy blah blah blah movies, reading (stephen king), biking, video games, fantasy football </p>    
+                </div>  
+            </div>
+        </section>
+    </section>
+    <!-- Footer Section -->
+
+    <footer>   
+        <nav class="footer">
+            <!-- replace text with icons  -->
+            <a href="https://github.com/kevinjcasey" target="_blank">
+                <ion-icon name="logo-github" size="small" role="img" class="md icon-small hydrated" aria-label="logo github"></ion-icon>
+            </a>
+            <a href="https://www.linkedin.com/in/kevin-j-casey/" target="_blank">
+                <ion-icon name="logo-linkedin" size="small" role="img" class="md icon-small hydrated" aria-label="logo linkedin"></ion-icon>
+            </a>
+            <a href="https://www.instagram.com/kevinjcasey10/" target="_blank">
+                <ion-icon name="logo-instagram" size="small" role="img" class="md icon-small hydrated" aria-label="logo instagram"></ion-icon>
+            </a>
+            <!-- this is not working -->
+            <a href="https://ga-students.slack.com/team/U02RV3B1PMH" target="_blank">
+                <ion-icon name="logo-slack" size="small" role="img" class="md icon-small hydrated" aria-label="logo slack"></ion-icon>
+            </a>
+        </nav>
+
+        <small>© Copyright 2022, Kevin Casey</small>
+    </footer>
+
+    <!-- for social icons in footer -->
+    <script type="module" src="./Kevin Casey Portfolio_files/ionicons.esm.js"></script>
+    <script nomodule="" src="./Kevin Casey Portfolio_files/ionicons.js"></script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
