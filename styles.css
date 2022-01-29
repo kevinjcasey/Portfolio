@@ -55,6 +55,7 @@
    border-radius: 10px;
 }
 
+/* change to 400-500 range; just placeholder on larger screen */
 @media (max-width: 800px) {
    .hamburger-button {
       display: flex;
@@ -77,17 +78,16 @@
    }
 
    .nav-links li {
-      /* to stop the "about me" from dropping to two lines */
-      width: 35%;
-      text-align: right;
+      width: 20%;
+      text-align: center;
    }
 
+   /* why they squished? */
    .nav-links li a {
       padding-top: 5px;
       padding-right: 40px;
       padding-bottom: 10px;
    }
-
 }
 
 
@@ -137,7 +137,7 @@ body {
    padding: 10px;
 }
 
-/* ================= About Me page ================= */
+/* ================= About page ================= */
 
 .about-container {
    display: flex;
@@ -201,8 +201,8 @@ body {
    display: block;
 }
 
-nav.footer a:hover {
-   background-color: white;
+.footer a:hover {
+   color: white;
 }
 
 nav.footer {
