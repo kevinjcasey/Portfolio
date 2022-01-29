@@ -3,7 +3,7 @@
 .header {
    display: flex;
    justify-content: space-between;
-   background-color: darkgrey;
+   background-color: #9099a2;
    align-items: center;
 }
 
@@ -24,7 +24,7 @@
 
 .nav-links li a {
    text-decoration: none;
-   color: black;
+   color: #d5d5d5;
    padding: 1rem;
    display: block; /* allows setting of width and height */
 }
@@ -32,7 +32,7 @@
 /* need another color for this plus the static text */
 .nav-links li a:hover {
   background-color: #2e2e2e;
-  color: white;
+  color: #ebeaea;
 }
 
 /* ---- Menu button ----- */
@@ -52,7 +52,7 @@
 .hamburger-button .menu-bar {
    height: 3px;
    width: 100%;
-   background-color: black;
+   background-color: #d5d5d5;
    border-radius: 10px;
 }
 
@@ -140,11 +140,13 @@ body {
    display: flex;
    flex-flow: column nowrap;
    justify-content: center;
-   background-image: linear-gradient(to bottom right, #66b98f, #07889B);
+   background-image: linear-gradient(to bottom right, #d5d5d5, #838383);
 }
 
 .about-container h2 {
    text-align: center;
+   color: black;
+   text-shadow: 2px 2px #d5d5d5;
 }
 
 .work-stuff {
@@ -172,7 +174,7 @@ body {
    padding: 10px;
    margin: 0 auto;
    font-size: 20px;
-   background-color: #eeaa7b;
+   background-color: #6d7993;
    color: #f8eee7;
 }
 
@@ -187,7 +189,7 @@ body {
    padding: 10px;
    margin: 0 auto;
    font-size: 20px;
-   background-color: #e37222;
+   background-color: #96858f;
    color: #f8eee7;
 }
 
@@ -224,7 +226,7 @@ body {
    color: inherit;
    font-size: 1rem;
    padding: 1rem;
-   color: lightgrey;
+   color: #d5d5d5;
    transition: color 0.3s;
    display: block;
    /* makes icons grow on hover - used with transform (below) */
@@ -232,12 +234,12 @@ body {
 }
 
 .footer a:hover {
-   color: white;
+   color: #ebeaea;
    transform: scale(1.8);
 }
 
 nav.footer {
    display: flex;
    justify-content: flex-start;
-   background-color: darkgrey;
+   background-color: #9099a2;
 }
