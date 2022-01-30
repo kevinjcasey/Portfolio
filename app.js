@@ -5,7 +5,25 @@ console.log("The jQuery is linked!");
 
 $(() => {
 
-// ============= hamburger nav menu =================
+// ============ modal pop-up on homepage =================
+
+const $modal = $('#modal')
+const $closeButton = $('#close')
+const $claim = $('#claim')
+
+const openModal = () => {
+    $modal.css('display', 'block')
+}
+const closeModal = () => {
+    $modal.css('display', 'none')
+}
+
+$closeButton.on('click', closeModal)
+$claim.on('click', closeModal)
+
+setTimeout(openModal, 5000);
+
+// ============= hamburger nav menu ======================
 
 
 const $hamburgerButton = $('.hamburger-button')
@@ -15,7 +33,7 @@ $hamburgerButton.on('click', () => {
     $navLinks.toggle(600).appendTo('.header')
 })
 
-// ============ resume accordion =================
+// ============ resume accordion =========================
 
 
     $('#accordion-1').accordion( {
@@ -26,6 +44,8 @@ $hamburgerButton.on('click', () => {
         collapsible: true,
         active: false
     })
-    
+
+
+
 })
 
