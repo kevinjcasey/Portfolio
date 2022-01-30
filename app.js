@@ -18,7 +18,11 @@ $hamburgerButton.on('click', () => {
 // ============ resume accordion =================
 
 
-    $('#accordion').accordion( {
+    $('#accordion-1').accordion( {
+        collapsible: true,
+        active: false
+    })
+    $('#accordion-2').accordion( {
         collapsible: true,
         active: false
     })

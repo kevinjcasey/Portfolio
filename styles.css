@@ -216,6 +216,15 @@ body {
 
 /* ================= Resume page ================= */
 
+.skills li {
+   list-style: none;
+}
+
+.resume-container  {
+   background-image: linear-gradient(to bottom right, #d5d5d5, #838383);
+   padding: 20px;
+}
+
 /* ================= Contact page ================= */
 
 /* =========== Footer ============= */
@@ -223,6 +232,7 @@ body {
 .footer a {
    text-decoration: none;
    font-family: Georgia, 'Times New Roman', Times, serif;
+   /* removes color indicating previously clicked */
    color: inherit;
    font-size: 1rem;
    padding: 1rem;
