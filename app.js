@@ -15,8 +15,13 @@ $hamburgerButton.on('click', () => {
     $navLinks.toggle(600).appendTo('.header')
 })
 
+// ============ resume accordion =================
 
 
-
-
+    $('#accordion').accordion( {
+        collapsible: true,
+        active: false
+    })
+    
 })
+
