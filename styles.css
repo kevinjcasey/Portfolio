@@ -221,8 +221,75 @@ body {
 }
 
 .resume-container  {
+   /* background-image: linear-gradient(to bottom right, #d5d5d5, #838383); */
+   display: flex;
+   flex-direction: column;
    background-image: linear-gradient(to bottom right, #d5d5d5, #838383);
    padding: 20px;
+}
+
+.summary {
+   display: flex;
+   border: 5px solid #525252;
+   border-radius: 10px 10px;
+   padding: 1rem;
+   margin: 2rem;
+   color: #f8eee7;
+   background-color: #96858f;
+   box-shadow: 5px 5px 5px black;
+}
+
+#accordion-1 .ui-accordion-content {
+   background-color: #6d7993;
+   box-shadow: 5px 5px 5px black;
+   color: #f8eee7;
+   padding: 1rem;
+   margin: 1rem;
+   width: 49%;
+}
+
+#accordion-1 .ui-accordion-header {
+   color: black;
+   width: 50%;
+   box-shadow: 5px 5px 5px black;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#accordion-2 .ui-accordion-header {
+   color: black;
+   width: 50%;
+   box-shadow: 5px 5px 5px black;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.experience h3 {
+   text-transform: uppercase;
+   color: #f8eee7;
+   border-bottom: 1px solid black;
+   border-width: thick;
+   border-radius: 5px;
+   width: 50%;
+   padding-bottom: 5px;
+}
+
+.education h3 {
+   text-transform: uppercase;
+   color: #f8eee7;
+   border-bottom: 1px solid black;
+   border-width: thick;
+   border-radius: 5px;
+   width: 50%;
+   padding-bottom: 5px;
+}
+
+.skills h3 {
+   text-transform: uppercase;
+   color: #f8eee7;
+   border-bottom: 1px solid black;
+   border-width: thick;
+   border-radius: 5px;
+   width: 50%;
+   padding-bottom: 5px;
 }
 
 /* ================= Contact page ================= */
@@ -238,7 +305,7 @@ body {
    padding: 1rem;
    color: #d5d5d5;
    transition: color 0.3s;
-   display: block;
+   /* display: block; */
    /* makes icons grow on hover - used with transform (below) */
    transition: transform .2s;
 }
@@ -250,6 +317,7 @@ body {
 
 nav.footer {
    display: flex;
+   flex-direction: row;
    justify-content: flex-start;
    background-color: #9099a2;
 }
