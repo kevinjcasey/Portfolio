@@ -57,14 +57,14 @@ accordionFunction()
 // message 
 // submit button
    
-const $firstName = $('<section>').attr('id', 'first-name')
-$firstName.appendTo('.contact-form')
-$firstName.append('<input id="name" type="text" placeholder="Your Name"/>')
-$firstName.append('<input id="email" type="text" placeholder="Your Email"/>')
-$firstName.append('<input id="phone" type="text" placeholder="Phone"/>')
-$firstName.append('<input id="company" type="text" placeholder="Company"/>') 
-$firstName.append('<input id="subject" type="text" placeholder="Subject"/>')
-$firstName.append('<input id="message" type="text" placeholder="Message"/>')
+const $contactForm = $('<section>').attr('id', 'inputs')
+$contactForm.appendTo('.contact-form')
+$contactForm.append('<input id="name" type="text" placeholder="Your Name"/>')
+$contactForm.append('<input id="email" type="text" placeholder="Your Email"/>')
+$contactForm.append('<input id="phone" type="text" placeholder="Phone"/>')
+$contactForm.append('<input id="company" type="text" placeholder="Company"/>') 
+$contactForm.append('<input id="subject" type="text" placeholder="Subject"/>')
+$contactForm.append('<input id="message" type="text" placeholder="Message"/>')
    
  
 

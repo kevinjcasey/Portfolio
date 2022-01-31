@@ -359,6 +359,24 @@ body {
 
 /* ================= Contact page ================= */
 
+.contact-form {
+   text-align: center;
+   padding: 20px;
+   margin: 30px;
+}
+#inputs {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+}
+
+#inputs input {
+   padding: 10px;
+   margin: 20px;
+   width: 30%;
+}
+
 /* ==================== Footer ==================== */
 
 .footer a {
