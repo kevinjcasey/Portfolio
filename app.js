@@ -65,8 +65,16 @@ $contactForm.append('<input id="phone" type="text" placeholder="Phone"/>')
 $contactForm.append('<input id="company" type="text" placeholder="Company"/>') 
 $contactForm.append('<input id="subject" type="text" placeholder="Subject"/>')
 $contactForm.append('<input id="message" type="text" placeholder="Message"/>')
-   
- 
+
+const $contactModal = $('#contact-modal')
+
+
+const $submitButton = $('<section>').attr('id', 'submit')
+$submitButton.appendTo('.contact-form')
+$submitButton.append('<input id="submit-button" type="submit" value="Send Message"/>')
+$submitButton.on('click', () => {
+    $contactModal()
+})
 
 })
 

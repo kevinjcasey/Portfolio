@@ -361,8 +361,15 @@ body {
 
 .contact-form {
    text-align: center;
+   /* padding: 20px;
+   margin: 30px; */
+   background-image: linear-gradient(to bottom right, #d5d5d5, #838383)
+}
+
+.contact-form h1 {
+   color: #f8eee7;
    padding: 20px;
-   margin: 30px;
+   margin: 0 auto;
 }
 #inputs {
    display: flex;
@@ -377,6 +384,17 @@ body {
    width: 30%;
 }
 
+#submit-button {
+   border: none;
+   padding: 10px;
+   margin: 10px;
+   width: 30%;
+   height: 50px;
+   border-radius: 10px;
+   background-color: #6d7993;
+   color: #f8eee7;
+   cursor: pointer;
+}
 /* ==================== Footer ==================== */
 
 .footer a {
