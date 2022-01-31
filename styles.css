@@ -298,6 +298,48 @@ body {
    padding: 10px;
 }
 
+@media (max-width: 650px) {
+   .work-stuff {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+   }
+
+   .work-card {
+      width: 80%;
+   }
+
+   .headshot-img-2 {
+      width: 80%;
+   }
+
+   .fun-stuff {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 10px;
+   }
+
+   .fun-card {
+      width: 80%;
+   }
+
+   .fun-Kevin-img {
+      width: 80%;
+   }
+}
+
+@media (min-width: 800px) {
+   .about-container {
+      display: flex;
+      justify-content: center;
+   }
+}
+
 /* ================= Projects page ================= */
 
 .projects-container {
