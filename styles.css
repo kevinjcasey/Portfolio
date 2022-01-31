@@ -455,6 +455,11 @@ body {
    padding: 1rem;
    margin: 1rem;
    width: 49%;
+   max-height: 20%;
+}
+
+#accordion-1 section {
+   height: 30%;
 }
 
 #accordion-1 .ui-accordion-header {
@@ -469,6 +474,16 @@ body {
    width: 50%;
    box-shadow: 5px 5px 5px black;
    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#accordion-2 .ui-accordion-content {
+   background-color: #6d7993;
+   box-shadow: 5px 5px 5px black;
+   color: #f8eee7;
+   padding: 1rem;
+   margin: 1rem;
+   width: 49%;
+   max-height: 20%;
 }
 
 .experience h3 {
@@ -499,6 +514,33 @@ body {
    border-radius: 5px;
    width: 50%;
    padding-bottom: 5px;
+}
+
+@media (max-width: 800px) {
+
+   #accordion-1 .ui-accordion-header {
+      width: 70%;
+   }
+
+   #accordion-1 .ui-accordion-content {
+      width: 100%;
+      height: 50%;
+      margin: 10px;
+      padding: 10px;
+      line-height: 30px;
+   }
+
+   #accordion-2 .ui-accordion-header {
+      width: 70%;
+   }
+
+   #accordion-2 .ui-accordion-content {
+      width: 100%;
+      height: 50%;
+      margin: 10px;
+      padding: 10px;
+      line-height: 20px;
+   }
 }
 
 /* ================= Contact page ================= */
@@ -552,6 +594,13 @@ textarea {
    color: #f8eee7;
    cursor: pointer;
    text-transform: uppercase;
+}
+
+@media (max-width: 500px) {
+/* why won't this stop f-ing shrinking? */
+   textarea {
+      max-width: 80%;
+   }
 }
 /* ==================== Footer ==================== */
 
