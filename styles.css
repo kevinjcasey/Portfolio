@@ -360,13 +360,13 @@ body {
 /* ================= Contact page ================= */
 
 .contact-form {
-   text-align: center;
    /* padding: 20px;
    margin: 30px; */
    background-image: linear-gradient(to bottom right, #d5d5d5, #838383)
 }
 
 .contact-form h1 {
+   text-align: center;
    color: #f8eee7;
    padding: 20px;
    margin: 0 auto;
@@ -381,19 +381,33 @@ body {
 #inputs input {
    padding: 10px;
    margin: 20px;
-   width: 30%;
+   /* is this working? */
+   min-width: 300px;
+   border-radius: 10px;
+   border: 3px solid #96858f;
+}
+
+textarea {
+   font-family: arial;
+   border: 3px solid #96858f;
+   border-radius: 10px;
+   padding: 10px;
+   margin: 20px;
+   height: 185px;
+   width: 400px;
 }
 
 #submit-button {
    border: none;
    padding: 10px;
-   margin: 10px;
+   margin: 20px;
    width: 30%;
    height: 50px;
    border-radius: 10px;
    background-color: #6d7993;
    color: #f8eee7;
    cursor: pointer;
+   text-transform: uppercase;
 }
 /* ==================== Footer ==================== */
 
