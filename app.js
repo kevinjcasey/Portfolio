@@ -33,11 +33,10 @@ $hamburgerButton.on('click', () => {
     $navLinks.toggle(600).appendTo('.header')
 })
 
-// ============= projects cards ==========================
 
-const $castleBattle = $('.castle-battle')
+// const $castleBattle = $('.castle-battle')
 
-$castleBattle.on ('click', )
+// $castleBattle.on ('click', )
 
 // ============ resume accordion =========================
 
