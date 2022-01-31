@@ -33,7 +33,14 @@ $hamburgerButton.on('click', () => {
     $navLinks.toggle(600).appendTo('.header')
 })
 
+// ============= projects cards ==========================
+
+const $castleBattle = $('.castle-battle')
+
+$castleBattle.on ('click', )
+
 // ============ resume accordion =========================
+
 const accordionFunction = () => {
     $('#accordion-1').accordion( {
         collapsible: true,
@@ -63,6 +70,7 @@ $messageBox.append('<textarea id="message" placeholder="Message"/>')
 
 
 const $contactModal = $('#contact-modal')
+// when "send message" button is clicked, have modal pop up saying "Thank you for reaching out!"
 
 const $submitButton = $('<section>').attr('id', 'submit')
 $submitButton.appendTo('.contact-form')
