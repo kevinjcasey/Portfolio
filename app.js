@@ -18,7 +18,7 @@ $(() => {
     $closeButton.on('click', closeModal)
     $claim.on('click', closeModal)
 
-    setTimeout(openModal, 6000);
+    setTimeout(openModal, 10000);
 
 // ============= hamburger nav menu ======================
 

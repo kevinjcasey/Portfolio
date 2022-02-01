@@ -14,7 +14,7 @@
 }
 
 .nav-links ul {
-   display: flex;
+   display: flex;/* for screen width < 500px (see below) */
    margin: 0;
    padding: 0;
 }
@@ -38,6 +38,7 @@
 
 /* ---- Hamburger menu button ----- */
 
+/* clickable */
 .hamburger-button {
    position: absolute; /* pushes to the right */
    top: 10px;
@@ -49,6 +50,7 @@
    height: 20px;
 }
 
+/* button "bars" */
 .hamburger-button .menu-bar {
    height: 3px;
    width: 100%;
@@ -151,12 +153,12 @@ body {
 
 #modal {
    background-color: rgba(0,0,0,0.4);
-   position: fixed;
+   position: fixed; /* won't move on scroll */
    top: 0;
    left: 0;
    height: 100%;
    width: 100%;
-   z-index: 1;
+   z-index: 1; /* keeps it "on top" of other content */
    display: none;
 }
 
@@ -170,7 +172,7 @@ body {
    border-bottom: 5px solid rgb(29, 29, 249);
    border-left: 5px solid rgb(29, 29, 249);
    margin: 150px auto;
-   box-shadow: 2px 2px black;
+   box-shadow: 2px 2px #2e2e2e;
    text-align: center;
    line-height: 3rem;
    padding: 1rem;
@@ -339,7 +341,7 @@ body {
    .fun-card {
       width: 80%;
    }
-
+   /* keeps stretching */
    .fun-Kevin-img {
       width: 80%;
    }
@@ -466,7 +468,6 @@ body {
    font-family: 'Poppins', sans-serif;
    font-size: 20px;
    color: #f8eee7;
-   text-shadow: none;
 }
 
 #accordion-1 .ui-accordion-content {
@@ -514,6 +515,7 @@ body {
 .experience h3 {
    text-transform: uppercase;
    color: #f8eee7;
+   /* line breaks between categories */
    border-bottom: 1px solid black;
    border-width: thick;
    border-radius: 5px;
@@ -525,6 +527,7 @@ body {
 .education h3 {
    text-transform: uppercase;
    color: #f8eee7;
+   /* line breaks between categories */
    border-bottom: 1px solid black;
    border-width: thick;
    border-radius: 5px;
@@ -536,6 +539,7 @@ body {
 .skills h3 {
    text-transform: uppercase;
    color: #f8eee7;
+   /* line breaks between categories */
    border-bottom: 1px solid black;
    border-width: thick;
    border-radius: 5px;
