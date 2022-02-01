@@ -26,6 +26,7 @@ $(() => {
     const $navLinks = $('.nav-links')
 
     $hamburgerButton.on('click', () => {
+        // toggles display and animation duration
         $navLinks.toggle(600).appendTo('.header')
     })
 
@@ -76,6 +77,7 @@ $(() => {
         const $closeBtn = $('<button>').attr('id','close-btn').text('Hooray!')
         $closeBtn.appendTo($contactModal)
         $closeBtn.on('click', () => {
+        // necessary?
             $closeContactModal
         // reloads contact page 
            location.reload()
