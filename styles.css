@@ -10,6 +10,7 @@
 .title {
    font-size: 1rem;
    margin: 10px;
+   font-family: 'Arvo', serif;
 }
 
 .nav-links ul {
@@ -23,19 +24,19 @@
 }
 
 .nav-links li a {
+   font-family: 'Montserrat', sans-serif;
    text-decoration: none;
    color: #d5d5d5;
    padding: 1rem;
    display: block; /* allows setting of width and height */
 }
 
-/* need another color for this plus the static text */
 .nav-links li a:hover {
   background-color: #2e2e2e;
   color: #ebeaea;
 }
 
-/* ---- Menu button ----- */
+/* ---- Hamburger menu button ----- */
 
 .hamburger-button {
    /* pushes to the right */
@@ -56,7 +57,6 @@
    border-radius: 10px;
 }
 
-/* change to 400-500 range; just placeholder on larger screen */
 @media (max-width: 500px) {
    .hamburger-button {
       display: flex;
@@ -111,7 +111,14 @@ body {
    display: flex;
    flex-direction: row;
    justify-content: space-around;
-   background-image: linear-gradient(to bottom right, white, black);
+   background-image: linear-gradient(to bottom right, #d5d5d5, #838383);
+}
+
+.main-container h2, .main-container h3 {
+   color: #2e2e2e;
+   font-family: 'Poppins', sans-serif;
+   text-shadow: 1px 1px #d5d5d5;
+   padding: 10px;
 }
 
 .headshot-img img {
@@ -229,10 +236,20 @@ body {
    background-image: linear-gradient(to bottom right, #d5d5d5, #838383);
 }
 
-.about-container h2 {
+.about-container h1 {
    text-align: center;
-   color: black;
+   color: #2e2e2e;
    text-shadow: 2px 2px #d5d5d5;
+   font-family: 'Poppins', sans-serif;
+   font-size: 30px;
+}
+
+.about-container h4 {
+   font-family: 'Poppins', sans-serif;
+   color: #f8eee7;
+   text-shadow: none;
+   font-weight: bold;
+   font-size: 2rem;
 }
 
 .work-stuff {
@@ -254,14 +271,16 @@ body {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   border: 5px solid black;
+   border: 5px solid #2e2e2e;
    border-radius: 20px;
-   width: 50%;
+   width: 40%;
    padding: 10px;
    margin: 0 auto;
    font-size: 20px;
    background-color: #6d7993;
    color: #f8eee7;
+   font-family: 'Poppins', sans-serif;
+   box-shadow: 5px 5px 5px #2e2e2e
 }
 
 .fun-card {
@@ -269,20 +288,17 @@ body {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   border: 5px solid black;
+   border: 5px solid #2e2e2e;
    border-radius: 20px;
-   width: 50%;
+   width: 40%;
    padding: 10px;
    margin: 0 auto;
    font-size: 20px;
    background-color: #96858f;
    color: #f8eee7;
+   font-family: 'Poppins', sans-serif;
+   box-shadow: 5px 5px 5px #2e2e2e;
 }
-
-/* NOTES: 
-   -For card flip, use toggleClass in jQuery
-   + transform / translate
-   + perspective for 3D effect - not necessary */
 
 .headshot-img-2 {
    border-radius: 30px;
@@ -352,6 +368,10 @@ body {
 .projects-container h2 {
    text-align: center;
    padding: 10px;
+   text-shadow: 2px 2px #d5d5d5;
+   font-family: 'Poppins', sans-serif;
+   font-size: 30px;
+
 }
 
 .project-cards {
@@ -448,6 +468,13 @@ body {
    box-shadow: 5px 5px 5px black;
 }
 
+.summary h3 {
+   font-family: 'Poppins', sans-serif;
+   font-size: 20px;
+   color: #f8eee7;
+   text-shadow: none;
+}
+
 #accordion-1 .ui-accordion-content {
    background-color: #6d7993;
    box-shadow: 5px 5px 5px black;
@@ -456,6 +483,8 @@ body {
    margin: 1rem;
    width: 49%;
    max-height: 20%;
+   font-family: 'Poppins', sans-serif;
+   font-size: 20px;
 }
 
 #accordion-1 section {
@@ -466,14 +495,14 @@ body {
    color: black;
    width: 50%;
    box-shadow: 5px 5px 5px black;
-   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-family: 'Montserrat', sans-serif;
 }
 
 #accordion-2 .ui-accordion-header {
    color: black;
    width: 50%;
    box-shadow: 5px 5px 5px black;
-   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-family: 'Montserrat', sans-serif;
 }
 
 #accordion-2 .ui-accordion-content {
@@ -484,6 +513,8 @@ body {
    margin: 1rem;
    width: 49%;
    max-height: 20%;
+   font-family: 'Poppins', sans-serif;
+   font-size: 20px;
 }
 
 .experience h3 {
@@ -494,6 +525,7 @@ body {
    border-radius: 5px;
    width: 50%;
    padding-bottom: 5px;
+   font-family: 'Montserrat', sans-serif;
 }
 
 .education h3 {
@@ -504,6 +536,7 @@ body {
    border-radius: 5px;
    width: 50%;
    padding-bottom: 5px;
+   font-family: 'Montserrat', sans-serif;
 }
 
 .skills h3 {
@@ -514,6 +547,14 @@ body {
    border-radius: 5px;
    width: 50%;
    padding-bottom: 5px;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.skills li {
+   font-family: 'Poppins', sans-serif;
+   color: #ebeaea;
+   /* font-weight: bold; */
+   font-size: 1.2rem;
 }
 
 @media (max-width: 800px) {
@@ -556,6 +597,10 @@ body {
    color: #f8eee7;
    padding: 20px;
    margin: 0 auto;
+   font-family: 'Poppins', sans-serif;
+   font-weight: bold;
+   color:#2e2e2e;
+   text-shadow: 1px 1px #f8eee7
 }
 #inputs {
    display: flex;
@@ -571,6 +616,7 @@ body {
    min-width: 300px;
    border-radius: 10px;
    border: 3px solid #96858f;
+   font-family: 'Montserrat', sans-serif;
 }
 
 textarea {
@@ -581,6 +627,7 @@ textarea {
    margin: 20px;
    height: 185px;
    width: 400px;
+   font-family: 'Montserrat', sans-serif;
 }
 
 #submit-button {
@@ -594,6 +641,7 @@ textarea {
    color: #f8eee7;
    cursor: pointer;
    text-transform: uppercase;
+   font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width: 500px) {
@@ -602,18 +650,58 @@ textarea {
       max-width: 80%;
    }
 }
+
+/* --------- send message modal  ------------ */
+
+#contact-modal {
+   background-color: rgba(0,0,0,0.4);
+   position: fixed;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   z-index: 1;
+   display: none;
+}
+
+#modal-2 {
+   background-color: #9099a2;
+   max-height: 400px;
+   max-width: 450px;
+   border-radius: 10px;
+   border: 5px solid #96858f;
+   margin: 150px auto;
+   box-shadow: 2px 2px 2px black;
+   color: #ebeaea;
+   text-align: center;
+   line-height: 2rem;
+   padding: 1rem;
+   font-family: 'Poppins', sans-serif;
+}
+
+#close-btn {
+   border: none;
+   padding: 10px;
+   border-radius: 10px;
+   background-color: #6d7993;
+   color: #ebeaea;
+   font-size: 1rem;
+   font-weight: bold;
+   cursor: pointer;
+   font-family: 'Montserrat', sans-serif;
+}
+
 /* ==================== Footer ==================== */
 
 .footer a {
    text-decoration: none;
-   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-family: 'Montserrat', sans-serif;
    /* removes color indicating previously clicked */
    color: inherit;
    font-size: 1rem;
    padding: 1rem;
    color: #d5d5d5;
    transition: color 0.3s;
-   /* display: block; */
    /* makes icons grow on hover - used with transform (below) */
    transition: transform .2s;
 }
