@@ -39,8 +39,7 @@
 /* ---- Hamburger menu button ----- */
 
 .hamburger-button {
-   /* pushes to the right */
-   position: absolute;
+   position: absolute; /* pushes to the right */
    top: 10px;
    right: 15px;
    display: none;
@@ -166,10 +165,10 @@ body {
    max-height: 400px;
    max-width: 550px;
    border-radius: 5px;
-   border-top: 20px solid blue;
-   border-right: 5px solid blue;
-   border-bottom: 5px solid blue;
-   border-left: 5px solid blue;
+   border-top: 20px solid rgb(29, 29, 249);
+   border-right: 5px solid rgb(29, 29, 249);
+   border-bottom: 5px solid rgb(29, 29, 249);
+   border-left: 5px solid rgb(29, 29, 249);
    margin: 150px auto;
    box-shadow: 2px 2px black;
    text-align: center;
@@ -182,7 +181,6 @@ body {
    font-size: 40px;
    color: rgb(247, 247, 30);
    text-shadow: 2px 2px rgb(29, 29, 29);
-   /* padding: 1rem; */
 }
 
 #claim {
@@ -225,7 +223,6 @@ body {
       font-size: 30px;
    }
 }
-
 
 /* ================= About page ================= */
 
@@ -302,7 +299,7 @@ body {
    max-width: 350px;
    max-height: 95%;
    padding: 10px;
-   filter : brightness(95%) contrast(90%) drop-shadow(10px 20px 5px #2e2e2e);
+   filter : brightness(95%) contrast(90%) drop-shadow(10px 10px 5px #2e2e2e);
 }
 
 .fun-Kevin-img {
@@ -310,7 +307,7 @@ body {
    max-width: 350px;
    max-height: 95%;
    padding: 10px;
-   filter : brightness(95%) contrast(90%) drop-shadow(10px 20px 5px #2e2e2e);
+   filter : brightness(95%) contrast(90%) drop-shadow(10px 10px 5px #2e2e2e);
 }
 
 @media (max-width: 1030px) {
@@ -370,7 +367,6 @@ body {
    text-shadow: 2px 2px #d5d5d5;
    font-family: 'Poppins', sans-serif;
    font-size: 30px;
-
 }
 
 .project-cards {
@@ -449,7 +445,6 @@ body {
 }
 
 .resume-container  {
-   /* background-image: linear-gradient(to bottom right, #d5d5d5, #838383); */
    display: flex;
    flex-direction: column;
    background-image: linear-gradient(to bottom right, #d5d5d5, #838383);
@@ -552,7 +547,6 @@ body {
 .skills li {
    font-family: 'Poppins', sans-serif;
    color: #ebeaea;
-   /* font-weight: bold; */
    font-size: 1.2rem;
 }
 
@@ -586,8 +580,6 @@ body {
 /* ================= Contact page ================= */
 
 .contact-form {
-   /* padding: 20px;
-   margin: 30px; */
    background-image: linear-gradient(to bottom right, #d5d5d5, #838383)
 }
 
@@ -644,7 +636,7 @@ textarea {
 }
 
 @media (max-width: 500px) {
-/* why won't this stop f-ing shrinking? */
+/* why the f won't this stop shrinking? */
    textarea {
       max-width: 80%;
    }
