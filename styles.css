@@ -99,7 +99,6 @@
    box-sizing: border-box;
 }
 
-/* play around with this more to see what works best */
 body {
    padding: 0;
    margin-bottom: 0;
@@ -126,6 +125,7 @@ body {
    max-width: 350px;
    max-height: 95%;
    padding: 10px;
+   filter : brightness(95%) contrast(90%) drop-shadow(10px 20px 5px #2e2e2e);
 }
 
 @media (max-width: 500px) {
@@ -232,7 +232,6 @@ body {
 .about-container {
    display: flex;
    flex-flow: column nowrap;
-   justify-content: center;
    background-image: linear-gradient(to bottom right, #d5d5d5, #838383);
 }
 
@@ -247,14 +246,15 @@ body {
 .about-container h4 {
    font-family: 'Poppins', sans-serif;
    color: #f8eee7;
-   text-shadow: none;
    font-weight: bold;
    font-size: 2rem;
+   text-align: center;
 }
 
 .work-stuff {
    display: flex;
    flex-direction: row;
+   flex-wrap: wrap;
    justify-content: center;
    padding: 10px;
 }
@@ -270,17 +270,15 @@ body {
    display: flex;
    flex-direction: column;
    justify-content: center;
-   align-items: center;
    border: 5px solid #2e2e2e;
    border-radius: 20px;
    width: 40%;
    padding: 10px;
-   margin: 0 auto;
    font-size: 20px;
    background-color: #6d7993;
    color: #f8eee7;
    font-family: 'Poppins', sans-serif;
-   box-shadow: 5px 5px 5px #2e2e2e
+   box-shadow: 5px 5px 5px #2e2e2e;
 }
 
 .fun-card {
@@ -292,7 +290,6 @@ body {
    border-radius: 20px;
    width: 40%;
    padding: 10px;
-   margin: 0 auto;
    font-size: 20px;
    background-color: #96858f;
    color: #f8eee7;
@@ -305,6 +302,7 @@ body {
    max-width: 350px;
    max-height: 95%;
    padding: 10px;
+   filter : brightness(95%) contrast(90%) drop-shadow(10px 20px 5px #2e2e2e);
 }
 
 .fun-Kevin-img {
@@ -312,9 +310,10 @@ body {
    max-width: 350px;
    max-height: 95%;
    padding: 10px;
+   filter : brightness(95%) contrast(90%) drop-shadow(10px 20px 5px #2e2e2e);
 }
 
-@media (max-width: 650px) {
+@media (max-width: 1030px) {
    .work-stuff {
       display: flex;
       flex-direction: column;
@@ -349,10 +348,10 @@ body {
    }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1031px) {
    .about-container {
       display: flex;
-      justify-content: center;
+      align-content: center;
    }
 }
 
