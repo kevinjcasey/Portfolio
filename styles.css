@@ -115,7 +115,7 @@ body {
 }
 
 .main-container h2, .main-container h3 {
-   color: #2e2e2e;
+   color: blue;
    font-family: 'Poppins', sans-serif;
    text-shadow: 1px 1px #d5d5d5;
    padding: 10px;
