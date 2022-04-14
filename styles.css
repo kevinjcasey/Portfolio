@@ -102,7 +102,8 @@
 
 body {
    padding: 0;
-   margin-bottom: 0;
+   margin: 0;
+   height: 100%;
 }
 
 /* ================= Home/Main page ================= */
@@ -112,6 +113,7 @@ body {
    flex-direction: row;
    justify-content: space-around;
    background-image: linear-gradient(to bottom right, #d5d5d5, #838383);
+   height: 733px;
 }
 
 .main-container h2, .main-container h3 {
@@ -361,6 +363,7 @@ body {
    flex-direction: column;
    padding: 10px;
    background-image: linear-gradient(to bottom right, #d5d5d5, #838383);
+   height: 733px;
 }
 
 .projects-container h2 {
@@ -584,7 +587,8 @@ body {
 /* ================= Contact page ================= */
 
 .contact-form {
-   background-image: linear-gradient(to bottom right, #d5d5d5, #838383)
+   background-image: linear-gradient(to bottom right, #d5d5d5, #838383);
+   height: 733px;
 }
 
 .contact-form h1 {
